@@ -1,43 +1,94 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>Wordle</title>
-    </head>
-    <body>
-        <h1>Wordle</h1>
-        <div class='container' class='centre'>
-            <div></div>
+
+<head>
+    <title>Wordle</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+
+<body>
+    <div class='container' class='centre'>
+        <h1 class='header'>Wordle</h1>
+        <div class='words-container' class='centre'>
+            <div class='word1'>
+                <div class='square'></div>
+                <div class='square'></div>
+                <div class='square'></div>
+                <div class='square'></div>
+                <div class='square'></div>
+            </div>
+            <div class='word2'>
+                <div class='square'></div>
+                <div class='square'></div>
+                <div class='square'></div>
+                <div class='square'></div>
+                <div class='square'></div>
+            </div>
+            <div class='word3'>
+                <div class='square'></div>
+                <div class='square'></div>
+                <div class='square'></div>
+                <div class='square'></div>
+                <div class='square'></div>
+            </div>
+            <div class='word4'>
+                <div class='square'></div>
+                <div class='square'></div>
+                <div class='square'></div>
+                <div class='square'></div>
+                <div class='square'></div>
+            </div>
+            <div class='word5'>
+                <div class='square'></div>
+                <div class='square'></div>
+                <div class='square'></div>
+                <div class='square'></div>
+                <div class='square'></div>
+            </div>
+            <div class='word6'>
+                <div class='square'></div>
+                <div class='square'></div>
+                <div class='square'></div>
+                <div class='square'></div>
+                <div class='square'></div>
+            </div>
         </div>
-        <div class='keyboard-container' class='centre'>
-            <button>Q</button>
-            <button>W</button>
-            <button>E</button>
-            <button>R</button>
-            <button>T</button>
-            <button>Y</button>
-            <button>U</button>
-            <button>I</button>
-            <button>O</button>
-            <button>P</button>
-            <br>
-            <button>A</button>
-            <button>S</button>
-            <button>D</button>
-            <button>F</button>
-            <button>G</button>
-            <button>H</button>
-            <button>J</button>
-            <button>K</button>
-            <button>L</button>
-            <br>
-            <button>Z</button>
-            <button>X</button>
-            <button>C</button>
-            <button>V</button>
-            <button>B</button>
-            <button>N</button>
-            <button>M</button>
+            <div class='keyboard-container' class='centre'>
+                <button class='keys letters'>Q</button>
+                <button class='keys letters'>W</button>
+                <button class='keys letters'>E</button>
+                <button class='keys letters'>R</button>
+                <button class='keys letters'>T</button>
+                <button class='keys letters'>Y</button>
+                <button class='keys letters'>U</button>
+                <button class='keys letters'>I</button>
+                <button class='keys letters'>O</button>
+                <button class='keys letters'>P</button>
+                <br>
+                <button class='keys letters'>A</button>
+                <button class='keys letters'>S</button>
+                <button class='keys letters'>D</button>
+                <button class='keys letters'>F</button>
+                <button class='keys letters'>G</button>
+                <button class='keys letters'>H</button>
+                <button class='keys letters'>J</button>
+                <button class='keys letters'>K</button>
+                <button class='keys letters'>L</button>
+                <br>
+                <button class='keys long-keys'>ENTER</button>
+                <button class='keys letters'>Z</button>
+                <button class='keys letters'>X</button>
+                <button class='keys letters'>C</button>
+                <button class='keys letters'>V</button>
+                <button class='keys letters'>B</button>
+                <button class='keys letters'>N</button>
+                <button class='keys letters'>M</button>
+                <button class='keys long-keys'>⌫</button>
+            </div>
+
         </div>
-    </body>
+        <script src='script.js'></script>
+</body>
+
 </html>

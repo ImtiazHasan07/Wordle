@@ -1,0 +1,81 @@
+/* html body {
+    font-family: sans-serif;
+} */
+
+.header {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.container {
+    text-align: center;
+}
+
+.square {
+    width: 60px;
+    height: 0px;
+    padding-top: 65px;
+    background-color: #ffffff;
+    border: 2px solid #d3d6da;
+    margin: 2px;
+}
+
+.word1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.word2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.word3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.word4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.word5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.word6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.keyboard-container {
+    margin-top: 1%;
+}
+
+.keys {
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 2px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #d3d6da;
+    border: none
+}
+
+.letters {
+    width: 50px;
+}
+
+.long-keys {
+    width: 75px;
+}
