@@ -12,81 +12,91 @@
         <h1 class='header'>Wordle</h1>
         <div class='words-container' class='centre'>
             <div class='word1'>
-                <div class='square'></div>
-                <div class='square'></div>
-                <div class='square'></div>
-                <div class='square'></div>
-                <div class='square'></div>
+                <div class='square letter1'></div>
+                <div class='square letter2'></div>
+                <div class='square letter3'></div>
+                <div class='square letter4'></div>
+                <div class='square letter5'></div>
             </div>
             <div class='word2'>
-                <div class='square'></div>
-                <div class='square'></div>
-                <div class='square'></div>
-                <div class='square'></div>
-                <div class='square'></div>
+                <div class='square letter1'></div>
+                <div class='square letter2'></div>
+                <div class='square letter3'></div>
+                <div class='square letter4'></div>
+                <div class='square letter5'></div>
             </div>
             <div class='word3'>
-                <div class='square'></div>
-                <div class='square'></div>
-                <div class='square'></div>
-                <div class='square'></div>
-                <div class='square'></div>
+                <div class='square letter1'></div>
+                <div class='square letter2'></div>
+                <div class='square letter3'></div>
+                <div class='square letter4'></div>
+                <div class='square letter5'></div>
             </div>
             <div class='word4'>
-                <div class='square'></div>
-                <div class='square'></div>
-                <div class='square'></div>
-                <div class='square'></div>
-                <div class='square'></div>
+                <div class='square letter1'></div>
+                <div class='square letter2'></div>
+                <div class='square letter3'></div>
+                <div class='square letter4'></div>
+                <div class='square letter5'></div>
             </div>
             <div class='word5'>
-                <div class='square'></div>
-                <div class='square'></div>
-                <div class='square'></div>
-                <div class='square'></div>
-                <div class='square'></div>
+                <div class='square letter1'></div>
+                <div class='square letter2'></div>
+                <div class='square letter3'></div>
+                <div class='square letter4'></div>
+                <div class='square letter5'></div>
             </div>
             <div class='word6'>
-                <div class='square'></div>
-                <div class='square'></div>
-                <div class='square'></div>
-                <div class='square'></div>
-                <div class='square'></div>
+                <div class='square letter1'></div>
+                <div class='square letter2'></div>
+                <div class='square letter3'></div>
+                <div class='square letter4'></div>
+                <div class='square letter5'></div>
             </div>
         </div>
-            <div class='keyboard-container' class='centre'>
-                <button class='keys letters'>Q</button>
-                <button class='keys letters'>W</button>
-                <button class='keys letters'>E</button>
-                <button class='keys letters'>R</button>
-                <button class='keys letters'>T</button>
-                <button class='keys letters'>Y</button>
-                <button class='keys letters'>U</button>
-                <button class='keys letters'>I</button>
-                <button class='keys letters'>O</button>
-                <button class='keys letters'>P</button>
-                <br>
-                <button class='keys letters'>A</button>
-                <button class='keys letters'>S</button>
-                <button class='keys letters'>D</button>
-                <button class='keys letters'>F</button>
-                <button class='keys letters'>G</button>
-                <button class='keys letters'>H</button>
-                <button class='keys letters'>J</button>
-                <button class='keys letters'>K</button>
-                <button class='keys letters'>L</button>
-                <br>
-                <button class='keys long-keys'>ENTER</button>
-                <button class='keys letters'>Z</button>
-                <button class='keys letters'>X</button>
-                <button class='keys letters'>C</button>
-                <button class='keys letters'>V</button>
-                <button class='keys letters'>B</button>
-                <button class='keys letters'>N</button>
-                <button class='keys letters'>M</button>
-                <button class='keys long-keys'>⌫</button>
+        <div class='keyboard-container' class='centre'>
+            <button id='Q' class='keys letters'>Q</button>
+            <button id='W' class='keys letters'>W</button>
+            <button id='E' class='keys letters'>E</button>
+            <button id='R' class='keys letters'>R</button>
+            <button id='T' class='keys letters'>T</button>
+            <button id='Y' class='keys letters'>Y</button>
+            <button id='U' class='keys letters'>U</button>
+            <button id='I' class='keys letters'>I</button>
+            <button id='O' class='keys letters'>O</button>
+            <button id='P' class='keys letters'>P</button>
+            <br>
+            <button id='A' class='keys letters'>A</button>
+            <button id='S' class='keys letters'>S</button>
+            <button id='D' class='keys letters'>D</button>
+            <button id='F' class='keys letters'>F</button>
+            <button id='G' class='keys letters'>G</button>
+            <button id='H' class='keys letters'>H</button>
+            <button id='J' class='keys letters'>J</button>
+            <button id='K' class='keys letters'>K</button>
+            <button id='L' class='keys letters'>L</button>
+            <br>
+            <button id='ENTER' class='keys long-keys'>ENTER</button>
+            <button id='Z' class='keys letters'>Z</button>
+            <button id='X' class='keys letters'>X</button>
+            <button id='C' class='keys letters'>C</button>
+            <button id='V' class='keys letters'>V</button>
+            <button id='B' class='keys letters'>B</button>
+            <button id='N' class='keys letters'>N</button>
+            <button id='M' class='keys letters'>M</button>
+            <button id='BACKSPACE' class='keys long-keys'>⌫</button>
+            <div hidden class='prompt-container'>
+                <p class='prompt-content'>Please enter a word!</p>
             </div>
-
+            <div hidden class='popup-container'>
+                <div class='top-container'>
+                    <h2 id='popup-title' class='popup-title'>You have $outcome!</h2>
+                    <button id='close' class='close'>x</button>
+                </div>
+                <h3 class='popup-content'>The word was $word</p>
+                <p class='popup-content'>Tries: $tries</p>
+                <button class='continue'>Continue</button>
+            </div>
         </div>
         <script src='script.js'></script>
 </body>

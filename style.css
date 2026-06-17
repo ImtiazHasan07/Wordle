@@ -6,6 +6,7 @@
     font-family: sans-serif;
     font-weight: bold;
     font-size: 40px;
+    margin: 10px;
 }
 
 .container {
@@ -13,9 +14,13 @@
 }
 
 .square {
-    width: 60px;
-    height: 0px;
-    padding-top: 65px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    width: 50px;
+    height: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: #ffffff;
     border: 2px solid #d3d6da;
     margin: 2px;
@@ -72,10 +77,78 @@
     border: none
 }
 
+.keys::after {
+    background-color: #000000;
+}
+
 .letters {
     width: 50px;
 }
 
 .long-keys {
     width: 75px;
+}
+
+.prompt-container {
+    position: absolute;
+    left: 42.5%;
+    bottom: 25%;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #b9d1ff;
+    border: 2px solid #000000;
+    border-radius: 20px;
+}
+
+.prompt-content {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.popup-container {
+    position: absolute;
+    left: 37.5%;
+    bottom: 10%;
+    width: 350px;
+    height: 500px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 20px;
+}
+
+.top-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    /* border: 2px solid #000000; */
+}
+
+.popup-title {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.close {
+    color: #ffffff;
+    background-color: #ff0000;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+}
+
+.popup-content {
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.continue {
+    font-size: 50px;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    font-family: sans-serif;
+    color: #ffffff;
+    background-color: #5c82b4;
 }
