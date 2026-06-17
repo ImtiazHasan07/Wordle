@@ -11,47 +11,47 @@
     <div class='container' class='centre'>
         <h1 class='header'>Wordle</h1>
         <div class='words-container' class='centre'>
-            <div class='word1'>
-                <div class='square letter1'></div>
-                <div class='square letter2'></div>
-                <div class='square letter3'></div>
-                <div class='square letter4'></div>
-                <div class='square letter5'></div>
+            <div class='row1'>
+                <div class='boxes letter1'></div>
+                <div class='boxes letter2'></div>
+                <div class='boxes letter3'></div>
+                <div class='boxes letter4'></div>
+                <div class='boxes letter5'></div>
             </div>
-            <div class='word2'>
-                <div class='square letter1'></div>
-                <div class='square letter2'></div>
-                <div class='square letter3'></div>
-                <div class='square letter4'></div>
-                <div class='square letter5'></div>
+            <div class='row2'>
+                <div class='boxes letter1'></div>
+                <div class='boxes letter2'></div>
+                <div class='boxes letter3'></div>
+                <div class='boxes letter4'></div>
+                <div class='boxes letter5'></div>
             </div>
-            <div class='word3'>
-                <div class='square letter1'></div>
-                <div class='square letter2'></div>
-                <div class='square letter3'></div>
-                <div class='square letter4'></div>
-                <div class='square letter5'></div>
+            <div class='row3'>
+                <div class='boxes letter1'></div>
+                <div class='boxes letter2'></div>
+                <div class='boxes letter3'></div>
+                <div class='boxes letter4'></div>
+                <div class='boxes letter5'></div>
             </div>
-            <div class='word4'>
-                <div class='square letter1'></div>
-                <div class='square letter2'></div>
-                <div class='square letter3'></div>
-                <div class='square letter4'></div>
-                <div class='square letter5'></div>
+            <div class='row4'>
+                <div class='boxes letter1'></div>
+                <div class='boxes letter2'></div>
+                <div class='boxes letter3'></div>
+                <div class='boxes letter4'></div>
+                <div class='boxes letter5'></div>
             </div>
-            <div class='word5'>
-                <div class='square letter1'></div>
-                <div class='square letter2'></div>
-                <div class='square letter3'></div>
-                <div class='square letter4'></div>
-                <div class='square letter5'></div>
+            <div class='row5'>
+                <div class='boxes letter1'></div>
+                <div class='boxes letter2'></div>
+                <div class='boxes letter3'></div>
+                <div class='boxes letter4'></div>
+                <div class='boxes letter5'></div>
             </div>
-            <div class='word6'>
-                <div class='square letter1'></div>
-                <div class='square letter2'></div>
-                <div class='square letter3'></div>
-                <div class='square letter4'></div>
-                <div class='square letter5'></div>
+            <div class='row6'>
+                <div class='boxes letter1'></div>
+                <div class='boxes letter2'></div>
+                <div class='boxes letter3'></div>
+                <div class='boxes letter4'></div>
+                <div class='boxes letter5'></div>
             </div>
         </div>
         <div class='keyboard-container' class='centre'>
@@ -85,20 +85,20 @@
             <button id='N' class='keys letters'>N</button>
             <button id='M' class='keys letters'>M</button>
             <button id='BACKSPACE' class='keys long-keys'>⌫</button>
-            <div hidden class='prompt-container'>
-                <p class='prompt-content'>Please enter a word!</p>
+            <div hidden id='prompt' class='prompt-container'>
+                <p id='aa' class='prompt-content'>$promptMessage</p>
             </div>
-            <div hidden class='popup-container'>
+            <div hidden id='popup-container' class='popup-container'>
                 <div class='top-container'>
-                    <h2 id='popup-title' class='popup-title'>You have $outcome!</h2>
+                    <h2 id='popup-title' class='popup-title'>$outcome</h2>
                     <button id='close' class='close'>x</button>
                 </div>
-                <h3 class='popup-content'>The word was $word</p>
+                <h3 class='popup-content'>The word was $word!</p>
                 <p class='popup-content'>Tries: $tries</p>
-                <button class='continue'>Continue</button>
+                <button id='continue' class='continue'>Continue</button>
             </div>
         </div>
-        <script src='script.js'></script>
+        <script src='script.js' type='text/javascript'></script>
 </body>
 
 </html>
